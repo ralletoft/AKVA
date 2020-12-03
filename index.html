@@ -9,7 +9,39 @@
 </head>
 
 <body>
-    <script></script>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <script>
+            let page;
+        document.addEventListener("DOMContentLoaded", getThePage);
+
+        async function getThePage() {
+
+            let url = "";
+            let jsonData = await fetch(url);
+            page = await jsonData.json();
+
+
+            console.log(page);http://mathaeusss.dk/kea/2_semester/ihs/wordpress/wp-json/wp/v2/pages
+
+//            document.querySelector("#text_content").innerHTML = page.content.rendered;
+//
+//
+//            document.querySelector(".link_fag").addEventListener("click", function() {
+//                window.location.href = "fag.html";
+//            });
+//            document.querySelector(".link_rejser").addEventListener("click", function() {
+//                window.location.href = "rejser.html";
+//            });
+//            document.querySelector(".link_FAQ").addEventListener("click", function() {
+//                window.location.href = "ofte_stillede_spoergsmaal.html";
+//            });
+
+
+
+        }
+    </script>
 </body>
 
 </html>
